@@ -14,6 +14,7 @@ Source0:    http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upst
 BuildRequires: perl(Moose)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(Module::Build::Compat)
 
 BuildArch: noarch
