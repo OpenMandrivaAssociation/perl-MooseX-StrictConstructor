@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Make your object constructors blow up on unknown attributes
 License:    GPL+ or Artistic
@@ -16,6 +16,7 @@ BuildRequires: perl(Moose)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(Test::More)
+Requires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
