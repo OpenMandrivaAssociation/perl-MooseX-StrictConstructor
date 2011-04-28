@@ -1,9 +1,9 @@
 %define upstream_name    MooseX-StrictConstructor
-%define upstream_version 0.13
+%define upstream_version 0.16
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Make your object constructors blow up on unknown attributes
 License:    GPL+ or Artistic
