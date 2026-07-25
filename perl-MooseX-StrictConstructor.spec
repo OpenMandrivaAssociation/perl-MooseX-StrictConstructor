@@ -1,15 +1,15 @@
 %define upstream_name    MooseX-StrictConstructor
-%define upstream_version 0.19
+%define upstream_version 0.21
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Make your object constructors blow up on unknown attributes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/MooseX/MooseX-StrictConstructor-%{upstream_version}.tar.gz
+Url:		https://github.com/moose/MooseX-StrictConstructor
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/MooseX-StrictConstructor-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
