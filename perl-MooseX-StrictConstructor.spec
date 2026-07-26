@@ -1,15 +1,13 @@
 %define upstream_name    MooseX-StrictConstructor
-%define upstream_version 0.21
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.21
+Release:	2
 
 Summary:	Make your object constructors blow up on unknown attributes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/moose/MooseX-StrictConstructor
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/MooseX-StrictConstructor-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/MooseX-StrictConstructor-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ attribute init argument that your class does not declare, then it calls
 "Carp::confess()". This is a great way to catch small typos.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -79,9 +77,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.80.0-1mdv2010.0
 + Revision: 404041
-- rebuild using %%perl_convert_version
-
-* Mon May 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
+- rebuild using %0.21 Mon May 04 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.08-1mdv2010.0
 + Revision: 371863
 - new version
 
